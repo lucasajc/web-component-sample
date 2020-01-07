@@ -45,16 +45,12 @@ class FilmCard extends HTMLElement {
           background-color: #096dd9;
           border-color: #096dd9;
         }
-        .card-container {
-          background: black;
-          color: yellow;
-          overflow: hidden;
-        }
         .film-title {
           padding-top: 1em;
           font-size: 20px;
         }
         .film-description-container {
+          background: black;
           overflow: hidden;
           height: 0px;
         }
@@ -106,20 +102,18 @@ class FilmCard extends HTMLElement {
       </style>
 
       <button class="button primary">Show ${this.film.title} opening crawl</button>
-      <div class="card-container">
-        <div class="film-description-container">
-          <div class="fade"></div>
-          <div class="film-description-text">
-            <div id="crawl-container">
-              <div class="film-description-title">
-                <p>Episode ${this.film.episode_id}</p>
-                <h1>${this.film.title}</h1>
-              </div>
-              <p>${this.film.opening_crawl}</p>
+      <section class="film-description-container">
+        <div class="fade"></div>
+        <div class="film-description-text">
+          <div id="crawl-container">
+            <div class="film-description-title">
+              <p>Episode ${this.film.episode_id}</p>
+              <h1>${this.film.title}</h1>
             </div>
+            <p>${this.film.opening_crawl}</p>
           </div>
         </div>
-      </div>
+      </section>
     `;
   }
 
