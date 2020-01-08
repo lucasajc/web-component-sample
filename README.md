@@ -17,12 +17,12 @@ $ npm install
 To run locally, type:
 
 ```
-$ npm start:dev
+$ npm run start:dev
 ```
 
 To generate build files:
 
 ```
-$ npm build
+$ npm run build
 ```
 
